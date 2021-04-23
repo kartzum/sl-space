@@ -15,6 +15,20 @@ https://www.scala-sbt.org/1.x/docs/sbt-new-and-Templates.html
 
 Scala Basic
 
+* Scala - 2.13.4
+* JDK - 16.0.1
+* sbt - 1.5.0
+
+### Collections
+
+Scala collections.
+
+https://docs.scala-lang.org/overviews/collections/overview.html
+
+#### Traversable
+
+* TraversableIterableExp
+
 ### Resources
 
 * https://doc.akka.io/docs/akka-http/current/index.html
