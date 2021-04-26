@@ -40,3 +40,4 @@ https://docs.scala-lang.org/overviews/collections/overview.html
 * https://habr.com/ru/post/330816/
 * https://habr.com/ru/company/tinkoff/blog/184310/
 * https://habr.com/ru/post/237043/
+* https://www.oreilly.com/library/view/learning-scala/9781449368814/ch06.html
