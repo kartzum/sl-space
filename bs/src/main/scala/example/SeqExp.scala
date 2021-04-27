@@ -58,9 +58,49 @@ object SeqExp {
     println(List("milk", "tea") map (_.toUpperCase)) // List(MILK, TEA)
   }
 
+  def reducing(): Unit = {
+    // max. Finds the maximum value in the list.
+    println(List(41, 59, 26).max) // 59
+    // min. Finds the minimum value in the list.
+    println(List(10.9, 32.5, 4.23, 5.67).min) // 4.23
+    // product. Multiplies the numbers in the list.
+    println(List(5, 6, 7).product) // 210
+    // sum. Sums up the numbers in the list.
+    println(List(11.3, 23.5, 7.2).sum) // 42.0
+    // contains. Checks if the list contains this element.
+    println(List(34, 29, 18) contains 29) // true
+    // endsWith. Checks if the list ends with a given list.
+    println(List(0, 4, 3) endsWith List(4, 3)) // true
+    // exists. Checks if a predicate holds true for at least one element in the list.
+    println(List(24, 17, 32) exists (_ < 18)) // true
+    // forall. Checks if a predicate holds true for every element in the list.
+    println(List(24, 17, 32) forall (_ < 18)) // false
+    // startsWith. Tests whether the list starts with a given list.
+    println(List(0, 4, 3) startsWith List(0)) // true
+    // fold. Reduces the list given a starting value and a reduction function.reduction function.
+    println(List(4, 5, 6).fold(0)(_ + _)) // 15
+    // foldLeft. Reduces the list from left to right given a starting value and a reduction function.
+    println(List(4, 5, 6).foldLeft(0)(_ + _)) // 15
+    // foldRight. Reduces the list from right to left given a starting value and a reduction function.
+    println(List(4, 5, 6).foldRight(0)(_ + _)) // 15
+    // reduce. Reduces the list given a reduction function, starting with the first element in the list.
+    println(List(4, 5, 6).reduce(_ + _)) // 15
+    // reduceLeft. Reduces the list from left to right given a reduction function, starting with the first element in the list.
+    println(List(4, 5, 6).reduceLeft(_ + _)) // 15
+    // reduceRight. Reduces the list from right to left given a reduction function, starting with the first element in the list.
+    println(List(4, 5, 6).reduceRight(_ + _)) // 15
+    // scan. Takes a starting value and a reduction function and returns a list of each accumulated value.
+    println(List(4, 5, 6).scan(0)(_ + _)) // List(0, 4, 9, 15)
+    // scanLeft. Takes a starting value and a reduction function and returns a list of each accumulated value from left to right.
+    println(List(4, 5, 6).scanLeft(0)(_ + _)) // List(0, 4, 9, 15)
+    // scanRight. Takes a starting value and a reduction function and returns a list of each accumulated value from right to left.
+    println(List(4, 5, 6).scanRight(0)(_ + _)) // List(15, 11, 6, 0)
+  }
+
   def main(args: Array[String]): Unit = {
     // simple()
     // arithmetic()
-    mapping()
+    // mapping()
+    reducing()
   }
 }
