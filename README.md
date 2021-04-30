@@ -29,6 +29,7 @@ https://docs.scala-lang.org/overviews/collections/overview.html
 
 * TraversableIterableExp
 * SeqExp
+* SetExp
 
 ### Resources
 
