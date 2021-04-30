@@ -97,10 +97,21 @@ object SeqExp {
     println(List(4, 5, 6).scanRight(0)(_ + _)) // List(15, 11, 6, 0)
   }
 
+  def patternMatching(): Unit = {
+    // Matching.
+    val statuses = List(500, 404)
+    val msg = statuses.head match {
+      case x if x < 500 => "okay"
+      case _ => "whoah, an error"
+    }
+    System.out.println(msg) // whoah, an error
+  }
+
   def main(args: Array[String]): Unit = {
     // simple()
     // arithmetic()
     // mapping()
-    reducing()
+    // reducing()
+    patternMatching()
   }
 }
